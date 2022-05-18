@@ -1,6 +1,7 @@
 # Utility functions
 #
 # Author: Xuran Wang
+# Modification by: Nicholas O'Neill
 # Copyright Xuran Wang (2018)
 ##########################################################################
 
