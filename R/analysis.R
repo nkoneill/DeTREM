@@ -1,6 +1,7 @@
 # Functions to perform the deconvolution analysis
 #
-# Author: Xuran Wang
+# Original Author: Xuran Wang
+# Modification by: Nicholas O'Neill
 #####################################################################################################
 
 #' Estimate cell type proportion with MuSiC and NNLS
