@@ -1,16 +1,23 @@
-Multi-subject Single Cell deconvolution (MuSiC)
+Modified Multi-subject Single Cell deconvolution (mMuSiC)
 =============================================
 
-`MuSiC` is a deconvolution method that utilizes cross-subject scRNA-seq to estimate cell type proportions in bulk RNA-seq data.
-![MuSiC\_pipeline](FigureMethod.jpg)
+`mMuSiC` is a modification of the MuSiC deconvolution algorithm optimized for single-nuclei reference data.
 
-How to cite `MuSiC`
+How to cite the original `MuSiC`
 -------------------
 Please cite the following publication:
 
 > *Bulk tissue cell type deconvolution with multi-subject single-cell expression reference*<br />
 > <small>X. Wang, J. Park, K. Susztak, N.R. Zhang, M. Li<br /></small>
 > Nature Communications. 2019 Jan 22 [https://doi.org/10.1038/s41467-018-08023-x](https://doi.org/10.1038/s41467-018-08023-x) 
+
+How to cite `mMuSiC`
+-------------------
+
+> Manuscript is being submitted, citation to be generated.
+
+
+
 
 Installation
 ------------
@@ -20,12 +27,12 @@ Installation
 install.packages('devtools')
 
 # install the MuSiC package
-devtools::install_github('xuranw/MuSiC')
+devtools::install_github('nkoneill/mMuSiC')
 
 # load
-library(MuSiC)
+library(mMuSiC)
 ```
 
 More Information
 -----------------
-Please see [Tutorial](http://xuranw.github.io/MuSiC/articles/MuSiC.html).
+This is the tutorial for the original [MuSiC](http://xuranw.github.io/MuSiC/articles/MuSiC.html).
