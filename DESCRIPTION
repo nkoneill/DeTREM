@@ -1,7 +1,7 @@
 Package: mMuSiC
 Type: Package
-Title: Modified Multi-subject single cell deconvolution
-Based on MuSiC Version: 0.2.0
+Title: Modified Multi-subject single cell deconvolution Based on MuSiC Version: 0.2.0
+Version: 1.0.0
 Authors@R: c(person("Nicholas", "O'Neill", role = c('aut', 'cre'), email = 'nkoneill@bu.edu'))
 Maintainer: Nicholas O'Neill <nkoneill@bu.edu>
 Description:  Modification to the deconvolution algorithm MuSiC to handle single-nuclei RNA-Seq reference data
