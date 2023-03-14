@@ -120,6 +120,8 @@ get_upper_tri = function(cormat){
 #' @export
 music_prop = function(bulk.eset, sc.eset, markers = NULL, clusters, samples, select.ct = NULL, cell_size = NULL, ct.cov = FALSE, verbose = TRUE,
                       iter.max = 1000, nu = 0.0001, eps = 0.01, centered = FALSE, normalize = FALSE, ... ){
+  if(ct.cov)
+      stop("ct.cov argument not tested or supported in mMuSiC, use the original MuSiC instead")
   bulk.gene = rownames(bulk.eset)[rowMeans(exprs(bulk.eset)) != 0]
   bulk.eset = bulk.eset[bulk.gene, , drop = FALSE]
   if(is.null(markers)){
@@ -282,6 +284,7 @@ music_prop = function(bulk.eset, sc.eset, markers = NULL, clusters, samples, sel
 #' @export
 music_prop.cluster = function(bulk.eset, sc.eset, group.markers, groups, clusters, samples, clusters.type,
                               verbose = TRUE, iter.max = 1000, nu = 0.0001, eps = 0.01, centered = FALSE, normalize = FALSE, ... ){
+  stop("music_prop.cluster is not tested or supported in mMuSiC, use the original MuSiC or music_prop instead")
   bulk.gene = rownames(bulk.eset)[rowMeans(exprs(bulk.eset)) != 0]
   bulk.eset = bulk.eset[bulk.gene, , drop = FALSE]
   select.ct = unlist(clusters.type)
