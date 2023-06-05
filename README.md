@@ -57,7 +57,7 @@ bulk.eset=ExpressionSet(assayData=as.matrix(bulk_expr))
 
 # Test the overlap of gene names between the two ExpressionSets
 # Having a low number of 'TRUE' matches indicates a discrepancy and is a common error
-table(rownames(bulk.eset) %in% rownames(sc.eset)
+table(rownames(bulk.eset) %in% rownames(sc.eset))
 
 # Run mMuSiC using both ExpressionSets, extract cell-fraction estimates from the result (sample x celltype) matrix
 estimates=music_prop(bulk.eset = bulk.eset, sc.eset = sc.eset, clusters = 'Celltype',samples = 'sampID', verbose = F)
