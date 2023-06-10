@@ -1,6 +1,6 @@
-Package: mMuSiC
+Package: DeTREM
 Type: Package
-Title: Modified Multi-subject single cell deconvolution Based on MuSiC Version: 0.2.0
+Title: Deconvolution with Target and Reference Difference Extending MuSiC Version: 0.2.0
 Version: 1.0.0
 Authors@R: c(person("Nicholas", "O'Neill", role = c('aut', 'cre'), email = 'nkoneill@bu.edu'))
 Maintainer: Nicholas O'Neill <nkoneill@bu.edu>
@@ -13,8 +13,8 @@ Imports:
         plyr,
         Biobase, 
         MCMCpack
-URL: https://github.com/nkoneill/mMuSiC
-BugReports: https://github.com/nkoneill/mMuSiC/issues
+URL: https://github.com/nkoneill/DeTREM
+BugReports: https://github.com/nkoneill/DeTREM/issues
 VignetteBuilder: knitr
 RoxygenNote: 7.1.0
 Remotes: 
