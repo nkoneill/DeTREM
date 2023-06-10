@@ -31,6 +31,7 @@ devtools::install_github('nkoneill/DeTREM')
 
 # Load
 library(DeTREM)
+library(Biobase)
 
 # Working with a Seurat object, a common single-cell 
 sc=readRDS("seurat_object.rds")
