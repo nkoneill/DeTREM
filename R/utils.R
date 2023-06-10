@@ -118,7 +118,7 @@ get_upper_tri = function(cormat){
 #' @seealso
 #' \code{\link{music_basis}}
 #' @export
-music_prop = function(bulk.eset, sc.eset, markers = NULL, clusters, samples, select.ct = NULL, cell_size = NULL, ct.cov = FALSE, verbose = TRUE,
+DeTREM = function(bulk.eset, sc.eset, markers = NULL, clusters, samples, select.ct = NULL, cell_size = NULL, ct.cov = FALSE, verbose = TRUE,
                       iter.max = 1000, nu = 0.0001, eps = 0.01, centered = FALSE, normalize = FALSE, ... ){
   if(ct.cov)
       stop("ct.cov argument not tested or supported in mMuSiC, use the original MuSiC instead")
@@ -282,9 +282,14 @@ music_prop = function(bulk.eset, sc.eset, markers = NULL, clusters, samples, sel
 #' @seealso
 #' \code{\link{music_basis}}; \code{\link{music_prop}}
 #' @export
+
+music_prop = function(){
+	  stop("You have loaded DeTREM which may conflict with MuSiC usage. Use the DeTREM function instead or reload MuSiC.")
+}
+
 music_prop.cluster = function(bulk.eset, sc.eset, group.markers, groups, clusters, samples, clusters.type,
                               verbose = TRUE, iter.max = 1000, nu = 0.0001, eps = 0.01, centered = FALSE, normalize = FALSE, ... ){
-  stop("music_prop.cluster is not tested or supported in mMuSiC, use the original MuSiC or music_prop instead")
+  stop("music_prop.cluster is not tested or supported in mMuSiC, use the original MuSiC or DeTREM instead")
   bulk.gene = rownames(bulk.eset)[rowMeans(exprs(bulk.eset)) != 0]
   bulk.eset = bulk.eset[bulk.gene, , drop = FALSE]
   select.ct = unlist(clusters.type)
