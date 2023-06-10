@@ -60,7 +60,7 @@ bulk.eset=ExpressionSet(assayData=as.matrix(bulk_expr))
 table(rownames(bulk.eset) %in% rownames(sc.eset))
 
 # Run DeTREM using both ExpressionSets, extract cell-fraction estimates from the result (sample x celltype) matrix
-estimates=music_prop(bulk.eset = bulk.eset, sc.eset = sc.eset, clusters = 'Celltype',samples = 'sampID', verbose = F)
+estimates=DeTREM(bulk.eset = bulk.eset, sc.eset = sc.eset, clusters = 'Celltype',samples = 'sampID', verbose = F)
 fractions=estimates$Est.prop.weighted
 ```
 
