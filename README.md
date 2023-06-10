@@ -1,7 +1,7 @@
-Modified Multi-subject Single Cell deconvolution (mMuSiC)
+Deconvoultion with Target and Reference differences Extending MuSiC: DeTREM
 =============================================
 
-`mMuSiC` is a modification of the MuSiC deconvolution algorithm optimized for single-nuclei reference data.
+`DeTREM` is a modification of the MuSiC deconvolution algorithm optimized for single-nuclei reference data.
 
 How to cite the original `MuSiC`
 -------------------
@@ -11,7 +11,7 @@ Please cite the following publication:
 > <small>X. Wang, J. Park, K. Susztak, N.R. Zhang, M. Li<br /></small>
 > Nature Communications. 2019 Jan 22 [https://doi.org/10.1038/s41467-018-08023-x](https://doi.org/10.1038/s41467-018-08023-x) 
 
-How to cite `mMuSiC`
+How to cite `DeTREM`
 -------------------
 
 > Manuscript is being submitted, citation to be generated.
@@ -27,10 +27,10 @@ Installation and Basic Analysis
 install.packages('devtools')
 
 # Install the MuSiC package
-devtools::install_github('nkoneill/mMuSiC')
+devtools::install_github('nkoneill/DeTREM')
 
 # Load
-library(mMuSiC)
+library(DeTREM)
 
 # Working with a Seurat object, a common single-cell 
 sc=readRDS("seurat_object.rds")
@@ -59,7 +59,7 @@ bulk.eset=ExpressionSet(assayData=as.matrix(bulk_expr))
 # Having a low number of 'TRUE' matches indicates a discrepancy and is a common error
 table(rownames(bulk.eset) %in% rownames(sc.eset))
 
-# Run mMuSiC using both ExpressionSets, extract cell-fraction estimates from the result (sample x celltype) matrix
+# Run DeTREM using both ExpressionSets, extract cell-fraction estimates from the result (sample x celltype) matrix
 estimates=music_prop(bulk.eset = bulk.eset, sc.eset = sc.eset, clusters = 'Celltype',samples = 'sampID', verbose = F)
 fractions=estimates$Est.prop.weighted
 ```
