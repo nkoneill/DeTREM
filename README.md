@@ -13,9 +13,11 @@ Please cite the following publication:
 
 How to cite `DeTREM`
 -------------------
+Please cite the following publication:
 
-> Manuscript is being submitted, citation to be generated.
-
+> *Bulk brain tissue cell-type deconvolution with bias correction for single-nuclei RNA sequencing data using DeTREM*<br />
+> <small>O’Neill NK, Stein TD, Hu J, Rehman H, Campbell JD, Yajima M, Zhang X, Farrer LA<br /></small>
+> BMC Bioinformatics. 2023 Sep 19 [https://doi.org/10.1186/s12859-023-05476-w](https://doi.org/10.1186/s12859-023-05476-w) 
 
 
 
