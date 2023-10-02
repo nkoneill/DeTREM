@@ -3,14 +3,6 @@ Deconvoultion with Target and Reference differences Extending MuSiC: DeTREM
 
 `DeTREM` is a modification of the MuSiC deconvolution algorithm optimized for single-nuclei reference data.
 
-How to cite the original `MuSiC`
--------------------
-Please cite the following publication:
-
-> *Bulk tissue cell type deconvolution with multi-subject single-cell expression reference*<br />
-> <small>X. Wang, J. Park, K. Susztak, N.R. Zhang, M. Li<br /></small>
-> Nature Communications. 2019 Jan 22 [https://doi.org/10.1038/s41467-018-08023-x](https://doi.org/10.1038/s41467-018-08023-x) 
-
 How to cite `DeTREM`
 -------------------
 Please cite the following publication:
@@ -18,7 +10,6 @@ Please cite the following publication:
 > *Bulk brain tissue cell-type deconvolution with bias correction for single-nuclei RNA sequencing data using DeTREM*<br />
 > <small>O’Neill NK, Stein TD, Hu J, Rehman H, Campbell JD, Yajima M, Zhang X, Farrer LA<br /></small>
 > BMC Bioinformatics. 2023 Sep 19 [https://doi.org/10.1186/s12859-023-05476-w](https://doi.org/10.1186/s12859-023-05476-w) 
-
 
 
 Installation and Basic Analysis
@@ -70,3 +61,9 @@ fractions=estimates$Est.prop.weighted
 More Information
 -----------------
 This is the tutorial for the original [MuSiC](http://xuranw.github.io/MuSiC/articles/MuSiC.html).
+
+How to cite the original 'MuSiC':
+
+> *Bulk tissue cell type deconvolution with multi-subject single-cell expression reference*<br />
+> <small>X. Wang, J. Park, K. Susztak, N.R. Zhang, M. Li<br /></small>
+> Nature Communications. 2019 Jan 22 [https://doi.org/10.1038/s41467-018-08023-x](https://doi.org/10.1038/s41467-018-08023-x) 
